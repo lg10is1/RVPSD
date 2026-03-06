@@ -28,7 +28,7 @@ blastp -query input.fasta -out output.blast -db db.fasta -outfmt 6 -evalue 1e-5 
 
 ### 2. foldseek_db (split archive)
 
-Foldseek structural search database generated using **Foldseek**.
+Foldseek structural search database generated using **[Foldseek](https://github.com/steineggerlab/foldseek)**.
 
 TM-scorehe Foldseek database exceeds GitHub file size limits, therefore the compressed archive has been split into multiple parts before uploading.  
 The `foldseek_db/` directory therefore contains **split fragments of the compressed database archive** rather than the database itself.
