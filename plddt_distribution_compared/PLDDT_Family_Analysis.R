@@ -446,9 +446,6 @@ cat("     Pairwise comparisons used the Wilcoxon rank-sum test with rank-biseria
 cat("     correlation (|r|) as the effect-size metric. Both unbalanced (full data)\n")
 cat("     and balanced 1:1 (stratified sampling) analyses were performed.\n\n")
 
-cat("[CN] 本报告对样本量前10的病毒科（Family）的AlphaFold预测pLDDT分数进行比较分析。\n")
-cat("     共分析", format(n_total, big.mark = ","), "个蛋白结构，采用Wilcoxon秩和检验并以Rank-biserial相关系数（|r|）\n")
-cat("     作为效应量指标。同时进行了非均衡（全数据）和均衡1:1（分层抽样）两种分析。\n\n")
 
 cat("KEY STATISTICS:\n")
 cat("  Total valid records        :", format(n_total, big.mark = ","), "\n")
@@ -487,18 +484,13 @@ cat("     Correction: Bonferroni adjustment for 45 comparisons\n")
 cat("     Effect size: Rank-biserial r = (2U - n1*n2) / (n1*n2)\n")
 cat("     Magnitude: negligible (<0.1), small (0.1-0.3), medium (0.3-0.5), large (>=0.5)\n\n")
 
-cat("[CN] 1. 非均衡分析（全数据）\n")
-cat("     检验：Wilcoxon秩和检验（Mann-Whitney U），exact = FALSE\n")
-cat("     多重检验校正：Bonferroni（45次比较）\n")
-cat("     效应量：Rank-biserial r = (2U - n1*n2) / (n1*n2)\n")
-cat("     效应量分级：可忽略（<0.1）、小（0.1-0.3）、中（0.3-0.5）、大（>=0.5）\n\n")
+
 
 cat("[EN] 2. Balanced 1:1 Analysis (Stratified Sampling)\n")
 cat("     pLDDT is divided into 20 strata; within each stratum, min(N1,N2) samples\n")
 cat("     are randomly drawn from each family. This controls for sample-size imbalance.\n\n")
 
-cat("[CN] 2. 均衡1:1分析（分层抽样）\n")
-cat("     将pLDDT分为20个分层，每层从两组中各抽取min(N1,N2)个样本，以消除样本量差异影响。\n\n")
+
 
 # --- Main Findings ---
 cat("================================================================================\n")
@@ -506,21 +498,18 @@ cat("SECTION 3: MAIN FINDINGS\n")
 cat("================================================================================\n\n")
 
 cat("[EN] 3.1 Top 5 Largest Effect Sizes (Unbalanced)\n\n")
-cat("[CN] 3.1 效应量最大的前5对（非均衡）\n\n")
+
 print(top5_pairs, row.names = FALSE)
 cat("\n")
 
 cat("[EN] Key observation: Picornaviridae appears in 4 of the top 5 pairs, suggesting a\n")
 cat("     distinct pLDDT profile compared to most other families.\n\n")
 
-cat("[CN] 关键发现：Picornaviridae在前5对中出现4次，表明其pLDDT特征与其他多数科存在显著差异。\n\n")
 
 cat("[EN] 3.2 Robustness (Balanced vs Unbalanced)\n")
 cat("     Of", n_pairs, "pairs,", n_robust, "showed |delta| < 0.05 between balanced and unbalanced\n")
 cat("     effect sizes, indicating high robustness.\n\n")
 
-cat("[CN] 3.2 稳健性（均衡 vs 非均衡）\n")
-cat("     在", n_pairs, "对比较中，", n_robust, "对的差异|delta| < 0.05，结果高度稳健。\n\n")
 
 # --- Biological Interpretation ---
 cat("================================================================================\n")
@@ -534,9 +523,7 @@ cat("     variability, sequence-length bias, taxonomic sampling bias, or evoluti
 cat("     conservation. Low pLDDT may indicate genuine disorder or lack of homologs\n")
 cat("     in AlphaFold's training set.\n\n")
 
-cat("[CN] pLDDT是AlphaFold的逐残基置信度评分（0-100）。科水平差异可能反映内在结构变异性、\n")
-cat("     序列长度偏倚、分类学采样偏倚或进化保守性。低pLDDT可能表示真实无序区域或\n")
-cat("     AlphaFold训练集中缺乏同源模板。\n\n")
+
 
 # --- File Index ---
 cat("================================================================================\n")
