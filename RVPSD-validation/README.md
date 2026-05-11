@@ -13,7 +13,7 @@ External validation of AlphaFold2-predicted RNA viral protein structures against
 | 3 | `03_compute_plddt_correlation.py` | Extract mean pLDDT from B-factors, correlate with TM-score, generate stratified statistics |
 | 4 | `04_plot_nature_figures.py` | Generate publication-ready Nature-style figures (hexbin scatter + stratified box plots) |
 
----
+----
 
 ## Requirements
 
