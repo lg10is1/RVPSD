@@ -4,12 +4,12 @@ This repository contains supporting database resources and search configurations
 
 RVPSD is a large-scale structural resource integrating AlphaFold2-predicted RNA viral protein structures with taxonomy, sequence, and functional annotations.
 
-webset: https://virus.9itsg.net/#/home or http://rvpsd.bio-x.cn/
+Websites: https://virus.9itsg.net/#/home or http://rvpsd.bio-x.cn/
 ---
 
 ## Repository Structure
 
-### 1. blastp_db.zip
+### 1. blastp_db
 
 BLASTP search database generated using **BLAST+ v2.16.0**.
 
