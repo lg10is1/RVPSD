@@ -1,9 +1,10 @@
 # RVPSD Database Resources
 
-This repository contains supporting database resources and search configurations used in the construction and deployment of the [RNA Viral Protein Structure Database](https://virus.9itsg.net/#/home) (RVPSD).
+This repository contains supporting database resources and search configurations used in the construction and deployment of the [RNA Viral Protein Structure Database](https://virus.9itsg.net/#/home) ([RVPSD](http://rvpsd.bio-x.cn/)).
 
 RVPSD is a large-scale structural resource integrating AlphaFold2-predicted RNA viral protein structures with taxonomy, sequence, and functional annotations.
 
+webset: https://virus.9itsg.net/#/home or http://rvpsd.bio-x.cn/
 ---
 
 ## Repository Structure
