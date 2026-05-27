@@ -28,66 +28,9 @@ blastp -query input.fasta -out output.blast -db db.fasta -outfmt 6 -evalue 1e-5 
 
 ---
 
-### 2. foldseek_db (split archive)
-
-Foldseek structural search database generated using **[Foldseek](https://github.com/steineggerlab/foldseek)**.
-
-TM-scorehe Foldseek database exceeds GitHub file size limits, therefore the compressed archive has been split into multiple parts before uploading.  
-The `foldseek_db/` directory therefore contains **split fragments of the compressed database archive** rather than the database itself.
-
-The archive was generated using:
-
-```bash
-tar -czvf foldseek_db.tar.gz ./foldseek_db/
-```
-
-and split using:
-
-```bash
-split -b 20M foldseek_db.tar.gz foldseek_db.tar.gz.
-```
-
-This produced **16 files** with names:
-
-```
-foldseek_db.tar.gz.aa
-...
-foldseek_db.tar.gz.ap
-```
-
-### Reconstructing the database
-
-These instructions were tested under **Linux** (other environments have not been tested).
-
-After downloading all split files, follow the steps below.
-
-#### Step 1: Merge the split files
-
-```bash
-cd foldseek_db
-cat foldseek_db.tar.gz.* > foldseek_db.tar.gz
-```
-
-#### Step 2: Extract the archive
-
-```bash
-tar -zxvf foldseek_db.tar.gz
-```
-
-After extraction, the folder `foldseek_db/` will contain **the structural database used for structure-based retrieval in RVPSD**.
-
-#### Example Foldseek command
-
-```bash
-foldseek easy-search input.pdb /database_path/db_name output.foldseek /tmp_folder_path_name --format-output query,target,alntmscore,u,t
-```
-
-- `alntmscore`: alignment TM-score  
-- Output includes query ID, target ID, and structural similarity metrics  
 
 ---
-
-### 3. mysql_db.zip
+### 2. mysql_db.zip
 
 MySQL database dump files compatible with **MySQL 5.7**.
 
