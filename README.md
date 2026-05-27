@@ -70,7 +70,7 @@ Associated datasets are released under the CC-BY 4.0 License unless otherwise st
 
 RVPSD is publicly accessible at:
 
-https://virus.9itsg.net/#/home
+https://virus.9itsg.net/#/home or http://rvpsd.bio-x.cn/
 
 ---
 
