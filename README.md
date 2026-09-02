@@ -79,9 +79,8 @@ https://virus.9itsg.net/#/home or http://rvpsd.bio-x.cn/
 If you use RVPSD resources, please cite:
 
 Qiangzhen Yang, Zhongshuai Tian, Tao Hu, Jiangrong Lou, Hengcong Liu, Edward C. Holmes, Yongyong Shi, Juan Li, Weifeng Shi.  
-RVPSD: A comprehensive and user-friendly web database for RNA viral protein structures.  
-bioRxiv 2026.02.06.704141.  
-https://doi.org/10.64898/2026.02.06.704141
+RNA viral protein structure database: A comprehensive and user-friendly web database for RNA viral protein structures.  
+iMetaOmics; 13 July 2026; e70120. https://doi.org/10.1002/imo2.70120 
 
 ---
 
